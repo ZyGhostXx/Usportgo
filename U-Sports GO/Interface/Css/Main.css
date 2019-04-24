@@ -107,7 +107,7 @@ menu {
 /*
   Essa é a posição original do HEADER e do MAIN
 */
-header, .main{
+header, .main {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
