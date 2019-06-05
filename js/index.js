@@ -8,7 +8,12 @@ $(document).ready(function() {
         var user = $(this).parent().parent().find('#user');
         var password = $(this).parent().parent().find('#password');
         if ((user.val() === userLogin) && (password.val() === passwordLogin)) {
-            $('#container').load('home.html');
+            $('.container').home();
         }
+    });
+
+    $('.menu-anchor').on('click touchstart', function (e) {
+        $('html').toggleClass('menu-active');
+        e.preventDefault();
     });
 });
